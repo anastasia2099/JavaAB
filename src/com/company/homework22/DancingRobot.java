@@ -1,18 +1,13 @@
 package com.company.homework22;
 
-public class DancingRobot implements Dance{
-    private String balet;
-    private String hiphop;
-    private String jazz;
-
-    public DancingRobot (String balet, String hiphop, String jazz){
-        this.balet = balet;
-        this.hiphop = hiphop;
-        this.jazz = jazz;
+public abstract class DancingRobot {
+    public  String getDefoultDanceType(){
+        return getDefoultDanceType();
     }
 
-    @Override
-    public String getDefaultDanceType() {
-        return null;
+    public abstract String getDancetype1();
+    public abstract String getDancetype2();
+
+
     }
-}
+
